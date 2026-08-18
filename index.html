@@ -1,135 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio Brian Akbar - XII RPL 1 SMKN 1 Semparuk" />
-  <title>Brian Akbar | Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Portfolio Brian Akbar">
+<title>Brian Akbar — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="intro" class="intro-screen">
-    <div class="intro-orb orb-a"></div>
-    <div class="intro-icons">
-      <span>&lt;/&gt;</span><span>♙</span><span>⌘</span>
-    </div>
-    <h1>Welcome To My<br><span>Portfolio Website</span></h1>
-    <p>© Brian Akbar</p>
-  </div>
+<div class="grid"></div><div class="orb one"></div><div class="orb two"></div>
+<header class="nav">
+<a class="logo" href="#home">Brian<span>.</span></a>
+<button id="menu" aria-label="Menu">☰</button>
+<nav id="links"><a class="active" href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Portfolio</a><a href="#contact">Contact</a></nav>
+</header>
+<main>
+<section id="home" class="hero">
+<div class="copy reveal">
+<p class="eyebrow">HELLO, WELCOME TO MY PORTFOLIO</p>
+<h1>Hello, I'm <span>Brian Akbar</span></h1>
+<p class="lead">Saya adalah siswa <b>Rekayasa Perangkat Lunak</b> yang tertarik dalam pengembangan website. Saya senang belajar teknologi baru, membuat tampilan digital yang menarik, dan mengembangkan project yang bermanfaat.</p>
+<div class="actions"><a class="btn primary" href="#contact">Contact Me</a><a class="btn secondary" href="#projects">View Projects</a></div>
+<div class="tags"><i>HTML</i><i>CSS</i><i>JavaScript</i></div>
+</div>
+<div class="photo reveal"><div class="ring"></div><div class="photo-box"><img src="brian.jpg" alt="Foto Brian Akbar"></div><div class="badge">RPL • Web Developer</div></div>
+</section>
 
-  <div class="ambient ambient-left"></div>
-  <div class="ambient ambient-right"></div>
-  <div class="grid-bg"></div>
+<section id="about" class="section"><div class="heading reveal"><p class="eyebrow">ABOUT ME</p><h2>Tentang <span>saya</span></h2></div>
+<div class="about"><article class="card reveal"><h3>Siapa saya?</h3><p>Saya Brian Akbar, siswa Rekayasa Perangkat Lunak yang sedang mengembangkan kemampuan di bidang website dan teknologi digital.</p><p>Saya suka mempelajari hal baru dan mengubah ide menjadi website yang sederhana, modern, dan nyaman digunakan.</p></article>
+<div class="data reveal"><div class="card"><small>Nama</small><b>Brian Akbar</b></div><div class="card"><small>Sekolah</small><b>SMKN 1 Semparuk</b></div><div class="card"><small>Kelas</small><b>XII RPL 1</b></div><div class="card"><small>Jurusan</small><b>Rekayasa Perangkat Lunak</b></div></div></div></section>
 
-  <header class="nav-wrap">
-    <div class="container nav">
-      <a class="brand" href="#home">Brian<span>.</span></a>
-      <nav>
-        <a class="active" href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+<section id="skills" class="section"><div class="heading reveal"><p class="eyebrow">MY SKILLS</p><h2>Yang sedang saya <span>pelajari</span></h2></div>
+<div class="skills"><div class="card reveal"><strong>HTML</strong><small>Struktur website</small><em>01</em></div><div class="card reveal"><strong>CSS</strong><small>UI & responsive design</small><em>02</em></div><div class="card reveal"><strong>JavaScript</strong><small>Interaksi & animasi</small><em>03</em></div><div class="card reveal"><strong>GitHub</strong><small>Version control & deployment</small><em>04</em></div></div></section>
 
-  <main>
-    <section id="home" class="hero section">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <div class="status-pill"><span></span> Ready to innovate</div>
-          <h1>Software<br><strong>Developer</strong></h1>
-          <div class="typing-line"><span id="typing"></span><i></i></div>
-          <p class="lead">Menciptakan website yang inovatif, fungsional, dan user-friendly untuk solusi digital.</p>
-          <div class="chips">
-            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span>
-          </div>
-          <div class="hero-actions">
-            <a class="btn primary" href="#portfolio">Projects ↗</a>
-            <a class="btn" href="#contact">Contact ✉</a>
-          </div>
-          <div class="socials">
-            <a href="#" aria-label="GitHub">⌘</a>
-            <a href="#" aria-label="LinkedIn">in</a>
-            <a href="#" aria-label="Instagram">◎</a>
-          </div>
-        </div>
+<section id="projects" class="section"><div class="heading reveal"><p class="eyebrow">PORTFOLIO</p><h2>Project <span>saya</span></h2></div>
+<div class="projects"><article class="card reveal"><em>01</em><h3>Personal Portfolio</h3><p>Website portfolio pribadi dengan HTML, CSS, dan JavaScript.</p><div class="tags"><i>HTML</i><i>CSS</i><i>JS</i></div></article><article class="card reveal"><em>02</em><h3>Web Project</h3><p>Tempat untuk menampilkan project website berikutnya.</p><div class="tags"><i>Responsive</i><i>UI</i></div></article></div></section>
 
-        <div class="hero-art reveal delay-1" aria-hidden="true">
-          <div class="art-glow"></div>
-          <div class="gear gear-big">⚙</div>
-          <div class="gear gear-small">⚙</div>
-          <div class="cloud">↓</div>
-          <div class="code-card">
-            <div class="code-top"><b></b><b></b><b></b></div>
-            <span>&lt;div&gt;</span><span>function()</span><span>{ code }</span>
-            <em></em><em></em>
-          </div>
-          <div class="monitor">
-            <div class="monitor-screen"><span>&lt;/&gt;</span><small>BRIAN</small></div>
-            <div class="monitor-stand"></div>
-          </div>
-          <div class="phone"><span>✓</span></div>
-          <div class="mini-gear">⚙</div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section about">
-      <div class="container">
-        <div class="section-title">
-          <h2>About <span>Me</span></h2>
-          <p>✧ Transforming ideas into digital experiences ✧</p>
-        </div>
-        <div class="about-grid">
-          <div class="about-copy reveal">
-            <h3>Hello, I'm<br><strong>Brian Akbar</strong></h3>
-            <p>Saya adalah siswa <b>Rekayasa Perangkat Lunak</b> yang tertarik dalam pengembangan website. Saya senang belajar teknologi baru, membuat tampilan digital yang menarik, dan mengembangkan project yang bermanfaat.</p>
-            <div class="about-actions">
-              <a class="btn primary" href="#contact">▣ Contact Me</a>
-              <a class="btn" href="#portfolio">&lt;/&gt; View Projects</a>
-            </div>
-          </div>
-          <div class="profile-wrap reveal delay-1">
-            <div class="profile-ring"><img src="brian.jpg" alt="Foto Brian Akbar"></div>
-            <div class="floating-dot dot-1"></div><div class="floating-dot dot-2"></div>
-          </div>
-        </div>
-        <div class="stats reveal">
-          <article><span class="stat-icon">&lt;/&gt;</span><div><b>RPL</b><small>JURUSAN</small><p>Rekayasa Perangkat Lunak</p></div><i>↗</i></article>
-          <article><span class="stat-icon">♙</span><div><b>XII</b><small>KELAS</small><p>XII RPL 1</p></div><i>↗</i></article>
-          <article><span class="stat-icon">◎</span><div><b>SMKN 1</b><small>SEKOLAH</small><p>SMKN 1 Semparuk</p></div><i>↗</i></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="portfolio" class="section portfolio">
-      <div class="container">
-        <div class="section-title">
-          <h2>My <span>Portfolio</span></h2>
-          <p>Beberapa project dan hasil belajar yang ingin saya kembangkan.</p>
-        </div>
-        <div class="project-grid">
-          <article class="project reveal"><div class="project-visual visual-one"><span>&lt;/&gt;</span></div><div class="project-info"><small>01 · WEBSITE</small><h3>Personal Portfolio</h3><p>Website portfolio pribadi dengan desain modern dan responsive.</p><a href="#">View Project ↗</a></div></article>
-          <article class="project reveal delay-1"><div class="project-visual visual-two"><span>PHP</span></div><div class="project-info"><small>02 · SCHOOL</small><h3>RPL School Project</h3><p>Project pembelajaran untuk menerapkan dasar pengembangan aplikasi.</p><a href="#">View Project ↗</a></div></article>
-          <article class="project reveal delay-2"><div class="project-visual visual-three"><span>JS</span></div><div class="project-info"><small>03 · EXPERIMENT</small><h3>Web Interaction</h3><p>Eksperimen JavaScript untuk membuat website lebih interaktif.</p><a href="#">View Project ↗</a></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact">
-      <div class="container contact-box">
-        <div class="section-title"><h2>Let's <span>Connect</span></h2><p>Terima kasih sudah mengunjungi portfolio saya.</p></div>
-        <p class="contact-text">Saya sedang terus belajar dan mengembangkan kemampuan di bidang Rekayasa Perangkat Lunak.</p>
-        <div class="contact-links"><a href="mailto:emailkamu@example.com">✉ Email</a><a href="#">⌘ GitHub</a><a href="#">◎ Instagram</a></div>
-      </div>
-    </section>
-  </main>
-
-  <footer>© 2026 Brian Akbar · XII RPL 1 · SMKN 1 Semparuk · Sambas, Kalimantan Barat</footer>
-  <script src="script.js"></script>
-</body>
-</html>
+<section id="contact" class="section"><div class="contact card reveal"><p class="eyebrow">CONTACT</p><h2>Mari terhubung.</h2><p>Terima kasih sudah mengunjungi portfolio saya.</p><a class="btn primary" href="mailto:emailkamu@example.com">Kirim Email</a></div></section>
+</main><footer>© <span id="year"></span> Brian Akbar. Dibuat dengan HTML, CSS & JavaScript.</footer>
+<script src="script.js"></script>
+</body></html>
