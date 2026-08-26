@@ -1,9 +1,14 @@
-const menu=document.getElementById("menu"),links=document.getElementById("links");menu.addEventListener("click",()=>links.classList.toggle("open"));document.querySelectorAll("nav a").forEach(a=>a.addEventListener("click",()=>links.classList.remove("open")));const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add("show")}),{threshold:.12});document.querySelectorAll(".reveal").forEach(e=>obs.observe(e));document.getElementById("year").textContent=new Date().getFullYear();const secs=document.querySelectorAll("main section");window.addEventListener("scroll",()=>{let c="home";secs.forEach(s=>{if(scrollY>=s.offsetTop-160)c=s.id});document.querySelectorAll("nav a").forEach(a=>a.classList.toggle("active",a.getAttribute("href")==="#"+c))});
-// Welcome intro
-window.addEventListener("load", () => {
-  const welcome = document.getElementById("welcome-screen");
-
-  setTimeout(() => {
-    welcome.remove();
-  }, 6000);
-});
+const menuBtn=document.getElementById('menuBtn');
+const nav=document.getElementById('nav');
+menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));
+document.querySelectorAll('nav a').forEach(link=>link.addEventListener('click',()=>nav.classList.remove('open')));
+const sections=document.querySelectorAll('main section');
+const links=document.querySelectorAll('nav a');
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+entry.target.id));
+    }
+  });
+},{rootMargin:'-35% 0px -55% 0px'});
+sections.forEach(s=>observer.observe(s));
